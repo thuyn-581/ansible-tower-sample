@@ -1,0 +1,6 @@
+- name: Target Clusters Sample
+  hosts: all
+  tasks:
+    - name: Target Clusters
+      debug: target_clusters
+
