@@ -1,0 +1,15 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: demo-tower-job-app-subscription
+  namespace: mike-ansible
+  labels:
+    app: demo-tower-job-app
+  annotations:
+    apps.open-cluster-management.io/github-path: op
+    apps.open-cluster-management.io/github-branch: master
+    apps.open-cluster-management.io/reconcile-option: merge
+spec:
+  channel: demo-ansible-tower-job-ch/ansible-tower-job-channel
+  placement:
+    local: true

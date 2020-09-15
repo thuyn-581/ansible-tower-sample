@@ -1,0 +1,8 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: ansible-tower-job-channel
+  namespace: demo-ansible-tower-job-ch
+spec:
+  type: Git
+  pathname: https://github.com/mikeshng/ansible-tower-sample.git
